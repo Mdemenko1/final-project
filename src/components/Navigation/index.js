@@ -1,54 +1,63 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import { AuthUserContext } from '../Session';
-import SignOutButton from '../SignOut';
+import { NavLink } from 'react-router-dom';
+import Dropdown from './Dropdown';
 import * as ROUTES from '../../constants/routes';
-import * as ROLES from '../../constants/roles';
+import './navigation.css'
+import { AuthUserContext } from '../Session';
+
 
 const Navigation = () => (
-  <AuthUserContext.Consumer>
-    {authUser =>
-      authUser ? (
-        <NavigationAuth authUser={authUser} />
-      ) : (
-        <NavigationNonAuth />
-      )
-    }
-  </AuthUserContext.Consumer>
+    <div>
+        <AuthUserContext.Consumer>
+            {authUser =>
+                authUser ? <NavigationAuth /> : <NavigationNonAuth />
+            }
+        </AuthUserContext.Consumer>
+    </div>
 );
 
-const NavigationAuth = ({ authUser }) => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
-    {!!authUser.roles[ROLES.ADMIN] && (
-      <li>
-        <Link to={ROUTES.ADMIN}>Admin</Link>
-      </li>
-    )}
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+
+const NavigationAuth = () => (
+
+    <header className="main-navigation">
+        {/* <div classNmae="main-navigation_logo"></div> */}
+        <nav className="main-navigation_item">
+            <ul>
+                {/* <li> <NavLink to={ROUTES.LANDING}>Landing</NavLink></li> */}
+
+                <li> <NavLink to={ROUTES.HOME}>Home</NavLink></li>
+
+                {/* <li> <NavLink to={ROUTES.ACCOUNT}>Account</NavLink></li> */}
+
+                {/* <li><NavLink to={ROUTES.ADMIN}>Admin</NavLink></li> */}
+                <li>
+                    <NavLink to={ROUTES.CONTACTUS}>Contact Us</NavLink>
+                </li>
+
+                <li><Dropdown /></li>
+            </ul>
+        </nav>
+    </header>
+
 );
 
 const NavigationNonAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-  </ul>
+    <header className="main-navigation">
+        {/* <div classNmae="main-navigation_logo"></div> */}
+        <nav className="main-navigation_item">
+            <ul>
+                <li>
+                    <NavLink to={ROUTES.HOME}>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to={ROUTES.CONTACTUS}>Contact Us</NavLink>
+                </li>
+
+                <li><Dropdown /></li>
+            </ul>
+        </nav>
+
+    </header>
 );
 
 export default Navigation;
