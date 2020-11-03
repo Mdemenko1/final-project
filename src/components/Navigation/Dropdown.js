@@ -24,7 +24,7 @@ const DropdownMenu = () => (
 
 const DropdownMenuAuth = () => (
     <div>
-        <div className="mb-2">
+        <div className="mb-2 dropdown">
             {[DropdownButton].map((DropdownType, idx) => (
                 <DropdownType
                     as={ButtonGroup}
@@ -32,11 +32,13 @@ const DropdownMenuAuth = () => (
                     id={`dropdown-button-drop-${idx}`}
                     size="sm"
                     title="My Account"
+                    className="dropdown"
                 >
 
 
                     <Dropdown.Item as={Link} to={ROUTES.ADMIN}>Admin</Dropdown.Item>
                     <Dropdown.Item as={Link} to={ROUTES.ACCOUNT}>Edit Profile</Dropdown.Item>
+                    <Dropdown.Item as={Link} to={ROUTES.CART}>Cart</Dropdown.Item>
                     <SignOutButton />
 
 

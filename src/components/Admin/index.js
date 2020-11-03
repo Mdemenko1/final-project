@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+
 import { withFirebase } from '../Firebase';
-import * as ROLES from '../../constants/roles';
 
 class AdminPage extends Component {
   constructor(props) {
@@ -11,9 +11,7 @@ class AdminPage extends Component {
       users: [],
     };
   }
-  componentWillUnmount() {
-    this.props.firebase.users().off();
-  }
+
   componentDidMount() {
     this.setState({ loading: true });
 
@@ -24,25 +22,33 @@ class AdminPage extends Component {
         ...usersObject[key],
         uid: key,
       }));
+
       this.setState({
         users: usersList,
-        users: snapshot.val(),
         loading: false,
       });
     });
   }
 
+  componentWillUnmount() {
+    this.props.firebase.users().off();
+  }
+
   render() {
     const { users, loading } = this.state;
+
     return (
       <div>
         <h1>Admin</h1>
+
         {loading && <div>Loading ...</div>}
+
         <UserList users={users} />
       </div>
     );
   }
 }
+
 const UserList = ({ users }) => (
   <ul>
     {users.map(user => (

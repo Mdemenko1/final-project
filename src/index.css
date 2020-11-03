@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,42 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer{
+
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fafafa;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: large;
+}
+.footer>p{
+margin:0
+}
+
+.fa {
+  font-size:30px;
+}
+
+.icongroup{
+  padding-left: 50px;
+}
+
+
+
+.carousel-item{
+  margin: 4rem;
+  height: 200px;
+  width: auto;
+  object-fit:cover
+} 
+.carousel-item img{
+  
+    height: 400px;
+    object-fit:cover;
 }
