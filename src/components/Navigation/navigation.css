@@ -4,7 +4,7 @@
     top:0;
     width:100%;
     height:3.5rem;
-    background:lightgrey ;
+    background:#fafafa;
     padding: 0 1rem;
     display:flex;
     justify-content: flex-end;
@@ -20,7 +20,7 @@
 margin-left:1.5rem;
 display:flex;
 
-
+/* color volvo: #284e80 */
 
 }
 .main-navigation_item ul{
@@ -33,14 +33,15 @@ margin:0;
 .main-navigation_item li{
     margin: 0 0.4rem;
     padding-top: 0.75rem;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .main-navigation_item a{
     text-decoration: none;
-    color:black;
+    color:black ;
 }
 .main-navigation_item a:hover,
 .main-navigation_item a:active{
-    color:purple;
+    color:#1c6bba ;
     text-decoration: none;
 }
 
@@ -51,3 +52,34 @@ cursor:default;
 text-decoration: none;
 padding: 4px 24px;
 }
+
+.dropdown>button{
+
+margin:0;
+border-color: #fafafa;
+background-color: #fafafa;
+color:black;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 1rem;
+padding:0;
+
+
+
+}
+.dropdown>button:hover{
+    border-color: #fafafa;
+    background-color: #fafafa;
+    color:black;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    padding:0;
+}
+
+.dropdown>button:active{
+        border-color: #fafafa;
+        background-color: #fafafa;
+        color:black;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1rem;
+        padding:0;
+        }

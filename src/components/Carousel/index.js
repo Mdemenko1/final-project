@@ -8,7 +8,7 @@ import Img3 from "./../../image/3.jpg"
 import Carousel from 'react-bootstrap/Carousel'
 
 const Carouselbase = () => (
-    <Carousel>
+    <Carousel className="carousel">
         <Carousel.Item>
             <img
                 className="d-block w-100"
