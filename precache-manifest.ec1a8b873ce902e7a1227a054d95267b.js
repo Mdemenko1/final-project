@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cdc5ac8e4d93af4ffd875dbe945de63",
+    "revision": "e5df4d8fc885a122bb6f908da61276a3",
     "url": "/mayla-co/index.html"
   },
   {
-    "revision": "b08b6b227422cd59bac2",
+    "revision": "8c910d357d7ab1205b8b",
     "url": "/mayla-co/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "65b79b91a149422f4dbd",
+    "revision": "2b9c6b8caf10704bd388",
     "url": "/mayla-co/static/css/main.079321ac.chunk.css"
   },
   {
-    "revision": "b08b6b227422cd59bac2",
-    "url": "/mayla-co/static/js/2.b1918c81.chunk.js"
+    "revision": "8c910d357d7ab1205b8b",
+    "url": "/mayla-co/static/js/2.defaa410.chunk.js"
   },
   {
     "revision": "b962909a7040b53b76bb931dd59e4242",
-    "url": "/mayla-co/static/js/2.b1918c81.chunk.js.LICENSE.txt"
+    "url": "/mayla-co/static/js/2.defaa410.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "65b79b91a149422f4dbd",
-    "url": "/mayla-co/static/js/main.493987ba.chunk.js"
+    "revision": "2b9c6b8caf10704bd388",
+    "url": "/mayla-co/static/js/main.af2a3d94.chunk.js"
   },
   {
     "revision": "411f570d98fa1b313a82",
