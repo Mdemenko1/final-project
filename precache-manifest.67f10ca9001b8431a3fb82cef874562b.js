@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2dfdfa3687661fdea3b9a05ede6bc2e",
+    "revision": "cce1809814b8ea82cc7f422f8a4d6821",
     "url": "/mayla-co/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mayla-co/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "4bbbb258db8d026d6251",
-    "url": "/mayla-co/static/css/main.415986d5.chunk.css"
+    "revision": "87011ca3228a1fda2208",
+    "url": "/mayla-co/static/css/main.079321ac.chunk.css"
   },
   {
     "revision": "b08b6b227422cd59bac2",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mayla-co/static/js/2.b1918c81.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4bbbb258db8d026d6251",
+    "revision": "87011ca3228a1fda2208",
     "url": "/mayla-co/static/js/main.8212ec59.chunk.js"
   },
   {
